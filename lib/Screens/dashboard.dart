@@ -103,10 +103,8 @@ class _MyDashBoardState extends State<MyDashBoard> {
               accountName: Text('$fullname'),
               accountEmail: Text("$uemail"),
               currentAccountPicture: CircleAvatar(
-                  child: Image.network(
-                '$uimg',
-                fit: BoxFit.cover,
-              )),
+                backgroundImage: NetworkImage('$uimg'),
+              ),
             ),
             ListTile(
               leading: Icon(Icons.home),
